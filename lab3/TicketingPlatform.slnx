@@ -1,0 +1,23 @@
+<Solution>
+  <Folder Name="/Services/" />
+  <Folder Name="/Services/Inventory/">
+    <Project Path="src/Services/Inventory/TicketingPlatform.Inventory.Application/TicketingPlatform.Inventory.Application.csproj" />
+    <Project Path="src/Services/Inventory/TicketingPlatform.Inventory.Domain/TicketingPlatform.Inventory.Domain.csproj" />
+    <Project Path="src/Services/Inventory/TicketingPlatform.Inventory.Presentation/TicketingPlatform.Inventory.Presentation.csproj" />
+  </Folder>
+  <Folder Name="/Services/Orders/">
+    <Project Path="src/Services/Orders/TicketingPlatform.Orders.Application/TicketingPlatform.Orders.Application.csproj" />
+    <Project Path="src/Services/Orders/TicketingPlatform.Orders.Domain/TicketingPlatform.Orders.Domain.csproj" />
+    <Project Path="src/Services/Orders/TicketingPlatform.Orders.Presentation/TicketingPlatform.Orders.Presentation.csproj" />
+  </Folder>
+  <Folder Name="/Services/Payments/">
+    <Project Path="src/Services/Payments/TicketingPlatform.Payments.Application/TicketingPlatform.Payments.Application.csproj" />
+    <Project Path="src/Services/Payments/TicketingPlatform.Payments.Domain/TicketingPlatform.Payments.Domain.csproj" />
+    <Project Path="src/Services/Payments/TicketingPlatform.Payments.Presentation/TicketingPlatform.Payments.Presentation.csproj" />
+  </Folder>
+  <Folder Name="/Tests/" />
+  <Folder Name="/Tests/Inventory/">
+    <Project Path="tests/Inventory/TicketingPlatform.Inventory.Application.Tests/TicketingPlatform.Inventory.Application.Tests.csproj" />
+    <Project Path="tests/Inventory/TicketingPlatform.Inventory.Domain.Tests/TicketingPlatform.Inventory.Domain.Tests.csproj" />
+  </Folder>
+</Solution>

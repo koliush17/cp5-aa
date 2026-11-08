@@ -1,0 +1,6 @@
+@TicketingPlatform.Inventory.Presentation_HostAddress = http://localhost:5251
+
+GET {{TicketingPlatform.Inventory.Presentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
