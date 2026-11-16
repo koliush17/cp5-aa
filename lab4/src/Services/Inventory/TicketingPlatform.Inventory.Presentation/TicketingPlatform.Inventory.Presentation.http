@@ -1,0 +1,29 @@
+@host = http://localhost:5251
+
+### 1. Seeded data (200)
+GET {{host}}/api/ticket-categories
+Accept: application/json
+
+### 2. Create category (201)
+POST {{host}}/api/ticket-categories
+Content-Type: application/json
+
+{ "name": "Standing", "capacity": 50 }
+
+### 3. Reserve tickets (201) - replace {id} with an id from step 1/2
+POST {{host}}/api/ticket-categories/{id}/reservations
+Content-Type: application/json
+
+{ "quantity": 3 }
+
+### 4. Over-reserve the seeded "Backstage" category (capacity 2) -> 422
+POST {{host}}/api/ticket-categories/{backstageId}/reservations
+Content-Type: application/json
+
+{ "quantity": 5 }
+
+### 5. Unknown category -> 404
+GET {{host}}/api/ticket-categories/00000000-0000-0000-0000-000000000001
+
+### 6. Delete (204)
+DELETE {{host}}/api/ticket-categories/{id}
